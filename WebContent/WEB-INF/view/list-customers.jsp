@@ -21,8 +21,16 @@
 	</div>
 	
 	<div id="container">
+	
 		<div id="content">
 		
+		<!-- put new button : Add customer -->
+		
+		<input type="button" value="Add customer"
+				onclick="window.location.href='showFormForAdd' ; return false;"
+				class="add-button"
+		/>
+		<!--  above class is actually the css style for pretty looking button -->
 		<!-- add our html table -->
 		
 		<table>
