@@ -1,4 +1,5 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,6 +32,16 @@
 				class="add-button"
 		/>
 		<!--  above class is actually the css style for pretty looking button -->
+		
+		<!-- add a search box -->
+		<form:form action="search" method="GET">
+		Search Customer:<input type="text" name="theSearchName" />
+		
+		<input type="submit" value="Search" class="add-button" />
+		</form:form>
+		
+		
+		
 		<!-- add our html table -->
 		
 		<table>
